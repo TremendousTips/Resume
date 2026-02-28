@@ -36,6 +36,7 @@
         <li><a href="#skills">Skills</a></li>
         <li><a href="#projects">Hobbies</a></li>
         <li><a href="#education">Education</a></li>
+        <li><a href="#certificates">Certificates</a></li>
       </ul>
     </div>
   </nav>
@@ -309,6 +310,126 @@
     </div>
   </section>
 
+  <!-- CERTIFICATES -->
+  <section id="certificates">
+    <span class="section-num">06</span>
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">06 / Certificates</span>
+        <h2>My Certificates</h2>
+      </div>
+      <div class="certs-grid">
+
+        <div class="cert-card reveal" onclick="openLightbox(this)">
+          <div class="cert-img-wrap">
+            <img src="images/SACloudGuru.png" alt="Certificate 1" loading="lazy" />
+            <div class="cert-overlay">
+              <span class="cert-zoom-icon">&#x2B0C;</span>
+            </div>
+          </div>
+          <p class="cert-label">Solutions Architecture Course</p>
+        </div>
+
+        <div class="cert-card reveal" onclick="openLightbox(this)">
+          <div class="cert-img-wrap">
+            <img src="images/MAIN1.jpg" alt="Certificate 2" loading="lazy" />
+            <div class="cert-overlay">
+              <span class="cert-zoom-icon">&#x2B0C;</span>
+            </div>
+          </div>
+          <p class="cert-label">First Place In Mathamatics</p>
+        </div>
+
+        <div class="cert-card reveal" onclick="openLightbox(this)">
+          <div class="cert-img-wrap">
+            <img src="images/School1.jpg" alt="Certificate 3" loading="lazy" />
+            <div class="cert-overlay">
+              <span class="cert-zoom-icon">&#x2B0C;</span>
+            </div>
+          </div>
+          <p class="cert-label">Semester 2 2024</p>
+        </div>
+
+        <div class="cert-card reveal" onclick="openLightbox(this)">
+          <div class="cert-img-wrap">
+            <img src="images/School5.jpg" alt="Certificate 3" loading="lazy" />
+            <div class="cert-overlay">
+              <span class="cert-zoom-icon">&#x2B0C;</span>
+            </div>
+          </div>
+          <p class="cert-label">Semester 2 2023</p>
+        </div>
+
+        <div class="cert-card reveal" onclick="openLightbox(this)">
+          <div class="cert-img-wrap">
+            <img src="images/School8.jpg" alt="Certificate 3" loading="lazy" />
+            <div class="cert-overlay">
+              <span class="cert-zoom-icon">&#x2B0C;</span>
+            </div>
+          </div>
+          <p class="cert-label">Premier's Reading Challenge 2023</p>
+        </div>
+
+        <div class="cert-card reveal" onclick="openLightbox(this)">
+          <div class="cert-img-wrap">
+            <img src="images/School3.jpg" alt="Certificate 3" loading="lazy" />
+            <div class="cert-overlay">
+              <span class="cert-zoom-icon">&#x2B0C;</span>
+            </div>
+          </div>
+          <p class="cert-label">Semester 1 2023</p>
+        </div>
+
+        <div class="cert-card reveal" onclick="openLightbox(this)">
+          <div class="cert-img-wrap">
+            <img src="images/School2.jpg" alt="Certificate 3" loading="lazy" />
+            <div class="cert-overlay">
+              <span class="cert-zoom-icon">&#x2B0C;</span>
+            </div>
+          </div>
+          <p class="cert-label">Semester 2 2022</p>
+        </div>
+
+        <div class="cert-card reveal" onclick="openLightbox(this)">
+          <div class="cert-img-wrap">
+            <img src="images/School7.jpg" alt="Certificate 3" loading="lazy" />
+            <div class="cert-overlay">
+              <span class="cert-zoom-icon">&#x2B0C;</span>
+            </div>
+          </div>
+          <p class="cert-label">Write a book 2022</p>
+        </div>
+
+        <div class="cert-card reveal" onclick="openLightbox(this)">
+          <div class="cert-img-wrap">
+            <img src="images/School6.jpg" alt="Certificate 3" loading="lazy" />
+            <div class="cert-overlay">
+              <span class="cert-zoom-icon">&#x2B0C;</span>
+            </div>
+          </div>
+          <p class="cert-label">Semester 1 2022</p>
+        </div>
+
+        <div class="cert-card reveal" onclick="openLightbox(this)">
+          <div class="cert-img-wrap">
+            <img src="images/School4.jpg" alt="Certificate 3" loading="lazy" />
+            <div class="cert-overlay">
+              <span class="cert-zoom-icon">&#x2B0C;</span>
+            </div>
+          </div>
+          <p class="cert-label">SRC Certificate</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- LIGHTBOX -->
+  <div id="lightbox" onclick="closeLightbox()">
+    <button class="lightbox-close" onclick="closeLightbox()">&#x2715;</button>
+    <img id="lightbox-img" src="" alt="" />
+  </div>
+
   <!-- FOOTER -->
   <footer>
     <div class="container">
@@ -476,10 +597,33 @@
       requestAnimationFrame(animateCursorRing);
     })();
 
-    document.querySelectorAll('a, button, .skill-category, .project-card, .badge').forEach(el => {
+    document.querySelectorAll('a, button, .skill-category, .project-card, .badge, .cert-card').forEach(el => {
       el.addEventListener('mouseenter', () => document.body.classList.add('cursor-hover'));
       el.addEventListener('mouseleave', () => document.body.classList.remove('cursor-hover'));
     });
+
+    // ============================================================
+    // LIGHTBOX
+    // ============================================================
+    function openLightbox(card) {
+      const img = card.querySelector('img');
+      const lb = document.getElementById('lightbox');
+      document.getElementById('lightbox-img').src = img.src;
+      document.getElementById('lightbox-img').alt = img.alt;
+      lb.classList.add('open');
+      document.body.style.overflow = 'hidden';
+    }
+
+    function closeLightbox() {
+      document.getElementById('lightbox').classList.remove('open');
+      document.body.style.overflow = '';
+    }
+
+    document.addEventListener('keydown', e => {
+      if (e.key === 'Escape') closeLightbox();
+    });
+
+    document.getElementById('lightbox-img').addEventListener('click', e => e.stopPropagation());
 
     // ============================================================
     // CARD 3D TILT
