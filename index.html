@@ -7,17 +7,9 @@
   <link rel="stylesheet" href="style.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=DM+Serif+Display&display=swap" rel="stylesheet" />
 </head>
 <body>
-
-  <!-- LOADER -->
-  <div id="loader">
-    <div class="loader-inner">
-      <div class="loader-name">Lucas<span class="accent">.</span></div>
-      <div class="loader-bar"><div class="loader-fill"></div></div>
-    </div>
-  </div>
 
   <!-- CUSTOM CURSOR -->
   <div id="cursor-ring"></div>
@@ -32,9 +24,9 @@
       <span class="nav-logo">Lucas<span class="accent">.</span></span>
       <ul class="nav-links">
         <li><a href="#summary">Summary</a></li>
-        <li><a href="#experience">Experience</a></li>
-        <li><a href="#skills">Skills</a></li>
         <li><a href="#projects">Hobbies</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#skills">Skills</a></li>
         <li><a href="#education">Education</a></li>
         <li><a href="#certificates">Certificates</a></li>
       </ul>
@@ -48,19 +40,48 @@
       <div class="blob blob-2"></div>
       <div class="grid-overlay"></div>
     </div>
-    <div class="hero-content">
-      <p class="hero-eyebrow">Hello, I'm</p>
-      <h1 class="hero-name" id="hero-name">Lucas Abrahams</h1>
-      <p class="hero-tagline">Motivated &amp; Reliable — eager to contribute, learn fast, and work hard.</p>
-      <div class="hero-badges">
-        <span class="badge">16 y/o</span>
-        <span class="badge">Hard Worker</span>
-        <span class="badge">Open to Opportunities</span>
+    <div class="hero-layout">
+      <div class="hero-content">
+        <p class="hero-eyebrow">Hello, I'm</p>
+        <h1 class="hero-name" id="hero-name">Lucas Abrahams</h1>
+        <p class="hero-tagline">Motivated &amp; Reliable — eager to contribute, learn fast, and work hard.</p>
+        <div class="hero-badges">
+          <span class="badge">16 y/o</span>
+          <span class="badge">Hard Worker</span>
+          <span class="badge">Open to Opportunities</span>
+        </div>
+        <div class="hero-cta">
+          <a href="#summary" class="btn btn-primary">My Summary</a>
+          <a href="#portfolio" class="btn btn-ghost">View Portfolio</a>
+        </div>
       </div>
-      <div class="hero-cta">
-        <a href="#summary" class="btn btn-primary">My Summary</a>
-        <a href="#experience" class="btn btn-ghost">Experience</a>
-      </div>
+
+      <aside class="hero-note" aria-label="A few things about Lucas">
+        <div class="hero-note-heading">
+          <span>FIELD NOTES</span>
+          <span>NEWCASTLE · NSW</span>
+        </div>
+        <div class="hero-illustration" aria-hidden="true">
+          <svg viewBox="0 0 440 340" role="presentation">
+            <path class="landform landform-back" d="M0 258 89 132l48 67 78-116 99 135 47-53 79 112v63H0z" />
+            <path class="landform landform-front" d="m0 276 78-73 60 43 69-91 78 86 53-45 102 83v61H0z" />
+            <path class="contour" d="M9 271c67-38 92-28 139-1 60 34 100-9 141-14 48-6 70 24 142 29" />
+            <path class="contour contour-two" d="M16 293c72-35 103-22 145 1 57 31 96-3 142-8 47-5 73 17 128 25" />
+            <path class="climb-route" d="M150 245c18-18 3-34 25-48s12-30 34-42 11-34 31-48" />
+            <circle class="route-point" cx="175" cy="197" r="4" />
+            <circle class="route-point" cx="209" cy="155" r="4" />
+            <circle class="route-point" cx="240" cy="107" r="4" />
+            <circle class="sun" cx="317" cy="83" r="30" />
+            <path class="sun-line" d="M317 37v-12m0 116v-12m46-46h12m-116 0h12m79-33 9-9m-82 82 9-9m64 0 9 9m-82-82 9 9" />
+          </svg>
+          <span class="illustration-caption">ONE STEP AT A TIME</span>
+        </div>
+        <div class="hero-note-details">
+          <div><span>OUTSIDE SCHOOL</span><strong>Climbing &amp; exploring</strong></div>
+          <div><span>ALWAYS LEARNING</span><strong>Code, people &amp; new skills</strong></div>
+        </div>
+        <span class="hero-note-stamp" aria-hidden="true">CURIOUS<br />BY NATURE</span>
+      </aside>
     </div>
     <div class="scroll-indicator">
       <div class="mouse"><div class="wheel"></div></div>
@@ -136,122 +157,13 @@
     </div>
   </section>
 
-  <!-- EXPERIENCE -->
-  <section id="experience">
+  <!-- HOBBIES -->
+  <section id="projects">
     <span class="section-num">02</span>
     <div class="container">
       <div class="section-header reveal">
-        <span class="section-tag">02 / Experience</span>
-        <h2>My Experience</h2>
-      </div>
-      <div class="timeline">
-
-        <div class="timeline-item reveal-left">
-          <div class="timeline-dot"></div>
-          <div class="timeline-content">
-            <span class="timeline-date">2026</span>
-            <h3>Freelance Developer</h3>
-            <p class="timeline-org">Self-directed</p>
-            <p>Contracted to design, develop, and deploy specialized scripts and game logic, ensuring high-performance code and seamless integration for client-led projects.</p>
-            <div class="timeline-tags">
-              <span>Lua</span>
-              <span>Python</span>
-              <span>Self-Motivated</span>
-            </div>
-          </div>
-        </div>
-
-        
-
-        <div class="timeline-item reveal-left">
-          <div class="timeline-dot"></div>
-          <div class="timeline-content">
-            <span class="timeline-date">2023</span>
-            <h3>SRC Member</h3>
-            <p class="timeline-org">St Pius X</p>
-            <p>Represented my year group on the Student Representative Council, attending meetings and contributing ideas to improve school life. Built confidence in speaking up, collaborating with staff and peers, and taking responsibility for the wider school community.</p>
-            <div class="timeline-tags">
-              <span>Leadership</span>
-              <span>Communication</span>
-              <span>Representation</span>
-            </div>
-          </div>
-        </div>
-
-        <div class="timeline-item reveal-left">
-          <div class="timeline-dot"></div>
-          <div class="timeline-content">
-            <span class="timeline-date">2023</span>
-            <h3>Soccer Referee</h3>
-            <p class="timeline-org">New Lambton Football Club</p>
-            <p>Officiated junior soccer matches, enforcing rules, managing player conduct, and making real-time decisions under pressure. Developed strong communication and conflict-resolution skills while maintaining a calm, authoritative presence on the field.</p>
-            <div class="timeline-tags">
-              <span>Communication</span>
-              <span>Decision Making</span>
-              <span>Conflict Resolution</span>
-            </div>
-          </div>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- SKILLS -->
-  <section id="skills">
-    <span class="section-num">03</span>
-    <div class="container">
-      <div class="section-header reveal">
-        <span class="section-tag">03 / Skills</span>
-        <h2>What I Bring</h2>
-      </div>
-      <div class="skills-grid">
-
-        <div class="skill-category reveal">
-          <h3>Work Skills</h3>
-          <div class="tag-cloud">
-            <span class="tag">Customer Service</span>
-            <span class="tag">Teamwork</span>
-            <span class="tag">Attention to Detail</span>
-            <span class="tag">Time Management</span>
-            <span class="tag">Following Instructions</span>
-          </div>
-        </div>
-
-        <div class="skill-category reveal">
-          <h3>Strengths</h3>
-          <div class="tag-cloud">
-            <span class="tag">Reliability</span>
-            <span class="tag">Punctuality</span>
-            <span class="tag">Fast Learner</span>
-            <span class="tag">Positive Attitude</span>
-            <span class="tag">Self-Motivated</span>
-          </div>
-        </div>
-
-        <div class="skill-category reveal">
-          <h3>Soft Skills</h3>
-          <div class="tag-cloud">
-            <span class="tag">Communication</span>
-            <span class="tag">Problem Solving</span>
-            <span class="tag">Team Player</span>
-            <span class="tag">Adaptability</span>
-            <span class="tag">Creative Thinking</span>
-            <span class="tag">Calm Under Pressure</span>
-          </div>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- HOBBIES -->
-  <section id="projects">
-    <span class="section-num">04</span>
-    <div class="container">
-      <div class="section-header reveal">
-        <span class="section-tag">04 / Hobbies</span>
-        <h2>What are my hobbies</h2>
+        <span class="section-tag">02 / Outside School</span>
+        <h2>A little beyond the classroom</h2>
       </div>
       <div class="projects-grid">
 
@@ -277,6 +189,126 @@
           </div>
         </div>
 
+      </div>
+    </div>
+  </section>
+
+  <!-- PORTFOLIO -->
+  <section id="portfolio">
+    <span class="section-num">03</span>
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">03 / Portfolio</span>
+        <h2>Selected projects &amp; work</h2>
+        <p class="section-intro">A few ways I’ve put curiosity, care, and problem-solving into practice.</p>
+      </div>
+      <div class="portfolio-grid">
+        <article class="portfolio-card portfolio-card--featured reveal-left">
+          <div class="portfolio-copy">
+            <span class="portfolio-kicker"><b>01</b> DEVELOPMENT · FREELANCE</span>
+            <h3>Game logic &amp; scripts</h3>
+            <p>Designed and built custom scripts and game logic for client-led projects, with a focus on dependable behaviour and smooth integration.</p>
+            <div class="portfolio-tags"><span>Lua</span><span>Python</span><span>Game logic</span></div>
+          </div>
+          <div class="portfolio-art code-art" aria-hidden="true">
+            <div class="art-window-bar"><span></span><span></span><span></span><b>game_logic.lua</b></div>
+            <div class="art-code">
+              <span><i>01</i> <b>local</b> project = <em>"game"</em></span>
+              <span><i>02</i></span>
+              <span><i>03</i> <b>function</b> setup()</span>
+              <span><i>04</i> &nbsp;&nbsp;return <em>ready</em></span>
+              <span><i>05</i> <b>end</b></span>
+            </div>
+          </div>
+        </article>
+
+        <article class="portfolio-card portfolio-card--personal reveal-right">
+          <div class="portfolio-copy">
+            <span class="portfolio-kicker"><b>02</b> PERSONAL PROJECTS</span>
+            <h3>Small builds, big ideas</h3>
+            <p>I make little things for fun, from Discord bots to websites. Each one is a chance to explore an idea and learn something new.</p>
+            <div class="portfolio-tags"><span>Python</span><span>JavaScript</span><span>Web</span></div>
+          </div>
+          <div class="portfolio-art browser-art" aria-hidden="true">
+            <div class="browser-top"><span></span><span></span><span></span><i>personal-projects</i></div>
+            <div class="browser-page"><b></b><span></span><span></span><div><i></i><i></i><i></i></div></div>
+          </div>
+        </article>
+
+        <article class="portfolio-card reveal-left">
+          <div class="portfolio-copy">
+            <span class="portfolio-kicker"><b>03</b> LEADERSHIP · 2023</span>
+            <h3>Student Representative Council</h3>
+            <p>Represented my year group at St Pius X, sharing ideas to improve school life and working with students and staff.</p>
+            <div class="portfolio-tags"><span>Communication</span><span>Leadership</span><span>Teamwork</span></div>
+          </div>
+          <div class="portfolio-art note-art" aria-hidden="true">
+            <span>STUDENT VOICE</span>
+            <blockquote>Listen well.<br />Speak up.<br /><b>Make a difference.</b></blockquote>
+            <i>St Pius X · SRC</i>
+          </div>
+        </article>
+
+        <article class="portfolio-card reveal-right">
+          <div class="portfolio-copy">
+            <span class="portfolio-kicker"><b>04</b> COMMUNITY · 2023</span>
+            <h3>Junior soccer referee</h3>
+            <p>Officiated junior matches for New Lambton Football Club, making clear decisions and helping games run fairly and safely.</p>
+            <div class="portfolio-tags"><span>Decision making</span><span>Communication</span><span>Composure</span></div>
+          </div>
+          <div class="portfolio-art field-art" aria-hidden="true">
+            <div class="field-lines"><span></span><span></span><span></span><i></i><b></b></div>
+            <span class="field-caption">NEW LAMBTON<br />MATCH DAY</span>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills">
+    <span class="section-num">04</span>
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">04 / Skills</span>
+        <h2>The way I work</h2>
+      </div>
+      <div class="skills-board">
+        <div class="skills-manifesto reveal-left">
+          <span class="skills-manifesto-label">MY APPROACH</span>
+          <h3>Show up.<br />Stay curious.<br /><em>Follow through.</em></h3>
+          <p>I bring a steady attitude, listen carefully, and keep learning as I go.</p>
+          <span class="skills-manifesto-mark" aria-hidden="true">04</span>
+        </div>
+        <div class="skills-list">
+          <article class="skill-row reveal-right">
+            <span class="skill-row-index">01</span>
+            <div>
+              <h3>Getting the job done</h3>
+              <div class="skill-tags">
+                <span>Customer service</span><span>Attention to detail</span><span>Time management</span><span>Following instructions</span>
+              </div>
+            </div>
+          </article>
+          <article class="skill-row reveal-right">
+            <span class="skill-row-index">02</span>
+            <div>
+              <h3>Working with people</h3>
+              <div class="skill-tags">
+                <span>Teamwork</span><span>Communication</span><span>Positive attitude</span><span>Calm under pressure</span>
+              </div>
+            </div>
+          </article>
+          <article class="skill-row reveal-right">
+            <span class="skill-row-index">03</span>
+            <div>
+              <h3>Learning &amp; adapting</h3>
+              <div class="skill-tags">
+                <span>Reliability</span><span>Punctuality</span><span>Problem solving</span><span>Fast learner</span><span>Adaptability</span><span>Self-motivated</span><span>Creative thinking</span>
+              </div>
+            </div>
+          </article>
+        </div>
       </div>
     </div>
   </section>
@@ -440,19 +472,6 @@
 
   <script>
     // ============================================================
-    // LOADER
-    // ============================================================
-    const loader = document.getElementById('loader');
-
-    window.addEventListener('load', () => {
-      setTimeout(() => {
-        loader.classList.add('hidden');
-        startHeroAnimations();
-        initObservers();
-      }, 1500);
-    });
-
-    // ============================================================
     // HERO ANIMATIONS
     // ============================================================
     function startHeroAnimations() {
@@ -469,9 +488,12 @@
 
       // Letter-by-letter name
       const nameEl = document.getElementById('hero-name');
-      nameEl.innerHTML = 'Lucas'.split('').map((l, idx) =>
-        `<span class="letter" style="animation-delay:${0.15 + idx * 0.1}s">${l}</span>`
-      ).join('');
+      let letterIndex = 0;
+      nameEl.innerHTML = 'Lucas Abrahams'.split(' ').map(word =>
+        `<span class="hero-name-word">${word.split('').map(letter =>
+          `<span class="letter" style="animation-delay:${0.15 + letterIndex++ * 0.08}s">${letter}</span>`
+        ).join('')}</span>`
+      ).join(' ');
 
       // Staggered fade-ups for remaining hero elements
       ['.hero-tagline', '.hero-badges', '.hero-cta'].forEach((sel, idx) => {
@@ -479,6 +501,10 @@
         setTimeout(() => el.classList.add('visible'), 650 + idx * 180);
       });
     }
+
+    // Start as soon as the page markup is ready; no splash screen or load delay.
+    startHeroAnimations();
+    initObservers();
 
     // ============================================================
     // SCROLL REVEAL OBSERVERS
@@ -501,27 +527,6 @@
         revealObs.observe(el);
       });
 
-      // Stagger tags within each tag-cloud
-      document.querySelectorAll('.tag-cloud').forEach(cloud => {
-        const tags = cloud.querySelectorAll('.tag');
-        tags.forEach((tag, i) => {
-          tag.style.opacity = '0';
-          tag.style.transform = 'translateY(16px) scale(0.9)';
-          tag.style.transition = `opacity 0.45s ease ${i * 0.07}s, transform 0.45s ease ${i * 0.07}s`;
-        });
-        const tagObs = new IntersectionObserver(entries => {
-          entries.forEach(entry => {
-            if (entry.isIntersecting) {
-              tags.forEach(tag => {
-                tag.style.opacity = '1';
-                tag.style.transform = 'none';
-              });
-              tagObs.unobserve(entry.target);
-            }
-          });
-        }, { threshold: 0.2 });
-        tagObs.observe(cloud);
-      });
     }
 
     // ============================================================
@@ -597,7 +602,7 @@
       requestAnimationFrame(animateCursorRing);
     })();
 
-    document.querySelectorAll('a, button, .skill-category, .project-card, .badge, .cert-card').forEach(el => {
+    document.querySelectorAll('a, button, .skill-row, .portfolio-card, .project-card, .badge, .cert-card').forEach(el => {
       el.addEventListener('mouseenter', () => document.body.classList.add('cursor-hover'));
       el.addEventListener('mouseleave', () => document.body.classList.remove('cursor-hover'));
     });
@@ -628,7 +633,7 @@
     // ============================================================
     // CARD 3D TILT
     // ============================================================
-    document.querySelectorAll('.project-card, .skill-category').forEach(card => {
+    document.querySelectorAll('.project-card').forEach(card => {
       card.addEventListener('mousemove', e => {
         const rect = card.getBoundingClientRect();
         const x = (e.clientX - rect.left) / rect.width - 0.5;
